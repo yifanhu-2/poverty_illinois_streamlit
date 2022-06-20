@@ -25,7 +25,7 @@ df_age = load_data('processed_data/demo_age.csv')
 df_gender = load_data('processed_data/demo_gender.csv')
 df_race = load_data('processed_data/demo_race.csv')
 
-df_zip = pd.read_csv('/Users/yifan/Documents/Github/yifanhu-2/poverty_illinois_streamlit/raw_data/uszips.csv', usecols=["zip", 'city', 'state_id', 'county_name'])
+df_zip = pd.read_csv('raw_data/uszips.csv', usecols=["zip", 'city', 'state_id', 'county_name'])
 df_zip = df_zip[df_zip['state_id'] == 'IL']
 
 
